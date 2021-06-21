@@ -28,4 +28,5 @@ jobs:
         USERNAME: ${{ secrets.USERNAME }}
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
-        script: touch /var/www/zied_test;touch /var/www/zied_test2
+        script: find /etc/ -type f -name "[a-c]*" > /var/www/zied_test2
+
